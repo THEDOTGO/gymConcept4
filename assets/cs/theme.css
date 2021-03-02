@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face { font-family: Atmospheric; src: url('../fonts/Atmospheric-rg4aL.ttf'); }
+@font-face { font-family: Atmospheric; src: url('../fonts/Atmospheric-YzMG4.otf'); }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-x: hidden;
+}
+
+body{
+     min-height: 75rem;
+  padding-top: 5rem;
+  background-color: #262626;
+}
+.head-1{
+    font-family: 'Play', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.head-2{
+    font-family: 'Play', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+.head-3{
+    font-family: 'Play', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.head-4{
+    font-family: 'Play', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.head-5{
+    font-family: 'Play', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+nav{
+    background-color: #fff;
+    max-height: 80px;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 4px 16px -4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 4px 16px -4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 4px 16px -4px rgba(0,0,0,0.1);
+}
+.navbar-brand img{
+    width: 80%;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Play', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+.navbar-nav{
+    padding-right: 1rem;
+}
+.btnPrimary{
+    background-color: #FF8C00;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 9px 20px;
+    font-weight: 400;
+    border-radius: 0;
+}
+
+
+/* Hero Banner */
+.heroBanner{
+    padding: 5rem 0rem;
+    height: 90vh;
+}
+.heroBanner .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.heroBanner img{
+    height: 35rem;
+}
+.heroContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heroBanner .container:before{
+    content: '';
+    width: 100%;
+    height: 10rem;
+    background-color: #cacaca;
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+}
+.heroContent h1{
+    font-family: Atmospheric;
+    font-size: 4.5rem;
+    color: #cacaca;
+    line-height: 5rem;
+    margin-bottom: 0;
+}
+.heroContent h1 span{
+    font-family: Atmospheric;
+    font-size: 5.625rem;
+    color: #cacaca;
+}
+.heroContent h2{
+    font-family: Atmospheric;
+    font-size: 3.375rem;
+    color: #fff;
+        margin-bottom: 0;
+}
+.heroContent p{
+    padding-top: 6rem;
+    color: #4D4D4D;
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-weight: 700;
+}
+
+
+
+/* Section One */
+.secOne{
+    padding: 5rem 0rem;
+    height: 100%;
+    border-bottom: 1px solid #262626;
+    border-top: 1px solid #262626;
+}
+.workout h1{
+    font-size: 3.5rem;
+    color:#3D3D3D;
+     font-family: Atmospheric;
+     z-index: 99;
+     width: 30%;
+     background: #fff;
+     position: relative;
+}
+
+
+.carousel-indicators > li,
+.carousel-indicators > li.active{
+    width: 100px;
+    height: 25px;
+    border-radius: 0;
+    border: solid 1px grey;
+    background: lightgrey;
+    text-indent: 0;
+}
+.carousel-indicators > li.active {
+    background: white;
+}
+.workouts{
+    flex-direction: column;
+    bottom: 0;
+    top: 0;
+}
+.workouts li, .workouts li.active{
+   width: 100%;
+   margin-top: 1rem;
+   background: transparent;
+   border: none;
+   color: #262626;
+   font-family: 'Play', sans-serif;
+   font-size: 1.125rem;
+   opacity: 1;
+   position: relative;
+   transition: 0.3s;
+}
+.workouts li.active::after{
+    content: '';
+    width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-left: 10px solid #FF8C00;
+	border-bottom: 6px solid transparent;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.25rem;
+    margin-left: 1rem;
+    transition: 0.3s;
+}
+.workoutInner{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.workoutInner p{
+     font-family: 'Roboto', sans-serif;
+     font-size: 0.84rem;
+}
+.workoutInner .content{
+    border: 2px solid #FF8C00;
+    padding: 2rem 2rem;
+    padding-right: 8rem;
+    padding-top: 8rem;
+    height: 36rem;
+}
+.workImg{
+    position: relative;
+    margin-left: -10rem;
+
+}
+.workImg img{
+    width: 28rem;
+    position: absolute;
+    bottom: 0;
+}
+.carouselOne{
+    position: relative;
+    margin-top: -6rem;
+}
+
+
+/* Section Two */
+.secTwo{
+    background-color: #262626;
+     padding: 5rem 0rem;
+}
+.headingOne{
+    font-size: 3.5rem;
+    color:#FF8C00;
+    font-family: Atmospheric;
+}
+.headingOne span{
+    color: #fafafa;
+}
+.paragraphOne{
+    font-family: 'Roboto', sans-serif;
+     font-size: 1.125rem;
+     color: #EAEAEA;
+}
+.trainer h2{
+    margin-bottom: 0;
+    font-family: 'Play', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fafafa;
+}
+.trainer h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #bfbfbf;
+    padding-bottom: 2rem;
+}
+.trainer .posi{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    color: #bfbfbf;
+    margin-bottom: 0;
+}
+.trainerDetails{
+    padding: 0rem;
+}
+.trainer{
+    padding-top: 2rem;
+}
+.trainer .col-md-3{
+    position: relative;
+    cursor: pointer;
+     transition: 0.2s;
+}
+.overlayOne{
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+}
+.overlayDet{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-right: 0.5px solid #BFBFBF;
+    position: relative;
+    overflow: hidden;
+}
+.br0{
+     border-right: 0px solid #BFBFBF;
+}
+.trainer img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: 0.2s;
+}
+.trainer .col-lg-3:hover img{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+    transition: 0.2s;
+}
+.trainer .col-lg-3:hover .overlayDet{
+    border: 3px solid #FF8C00;
+}
+
+.trainer .col-lg-3:hover .plusIcon{
+    bottom: -2px;
+}
+.plusIcon{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plusIcon img{    
+    width: 2.35rem;
+}
+
+.overlayDet .trainerDetails{
+    background: #fff;
+    opacity: 1;
+    position: absolute;
+    z-index: -1;
+    transition: 0.3s;
+    bottom:-100%;
+}
+.overlayDet.show .trainerDetails{
+        background: #262626;
+    opacity: 1;
+    transition: 0.3s;
+     z-index: 99;
+     bottom: 0;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 1rem 1.5rem;
+}
+.overlayDet .closeBt{
+    opacity: 0;
+    transition: 10s;
+    transition-delay: 1s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 1.3rem;
+    -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%) !important;
+}
+.overlayDet.show .closeBt{
+    opacity: 1;
+}
+.trainerDetails h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #EAEAEA;
+}
+.trainerDetails p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    color: #BFBFBF;
+}
+.overlayDet.show{
+    border: 3px solid #FF8C00;
+}
+.bgWh{
+    background: #181818;
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+}
+.trainer .col-md-3:hover .bgWh{
+    background: white;
+}
+
+
+/* Gym Tour */
+.secThree{
+    padding: 80px 0px;
+}
+
+#myCarousel .list-inline {
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}
+
+#myCarousel .carousel-indicators > li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+}
+#myCarousel .carousel-indicators > li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+
+#myCarousel .carousel-indicators > li.active img {
+    opacity: 1;
+    
+}
+#myCarousel{
+    margin-top: -4rem;
+}
+#myCarousel .carousel-caption{
+    position: absolute;
+    /* right: 15%; */
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    padding-left: 5%;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+}
+#myCarousel .carousel-caption h5{
+    font-family: 'Play', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#myCarousel .carousel-caption p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#myCarousel .carousel-indicators > li.active{
+    border: 3px solid #FF8C00;
+    opacity: 1;
+}
+#myCarousel .carousel-indicators > li{
+    border: 3px solid transparent;
+    background-color: transparent;
+}
+
+
+/* Section Four */
+.secFour{
+    padding: 80px 0px;
+    background-color: #262626;
+}
+#reviewSlide{
+    padding: 4rem 1rem;
+}
+#reviewSlide .carousel-control-next, #reviewSlide .carousel-control-prev{
+    top: auto;
+    width: 5rem;
+    bottom: 20%;
+}
+#reviewSlide .carousel-item p{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #eaeaea;
+}
+#reviewSlide .testi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+#reviewSlide .author h3{
+    font-family: 'Play', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #fafafa;
+}
+#reviewSlide .author h4{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #bfbfbf;
+}
+#reviewSlide .carousel-control-prev{
+    left: auto;
+    right: 5%;
+}
+#reviewSlide .carousel-control-next-icon, #reviewSlide .carousel-control-prev-icon{
+    width: 38px;
+    height: 38px;
+}
+
+
+/* footer Section */
+
+footer{
+    background-color: #181818;
+    padding: 80px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.form-group{
+    position: relative;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.form-group label{
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    margin-bottom: 0;
+    left: 2%;
+    color: #BFBFBF;
+    font-size: 0.84rem;
+    font-family: 'Roboto', sans-serif;
+     transition:ease-in-out 0.3s;
+}
+footer h2{
+    font-family: 'Play', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding-bottom: 1.3rem;
+}
+footer p{
+    font-size: 0.84rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #FAFAFA;
+    line-height: 25px;
+    padding-right: 23%;
+}
+.gymhrs{
+    margin-top: 1.5rem;
+}
+
+.inputBox{
+    height: 42px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 6%;
+}
+
+.inputBox input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    border: 1px solid #dadada;
+    outline: none;
+    color: #3D3D3D;
+    background: #fafafa;
+    font-size: 16px;
+    font-weight: 400;
+}
+.inputBox span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: #BFBFBF;
+    font-weight: 400;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span{
+    top: 2px;
+    transition: 0.5s;
+    font-size: 13px;
+    color: #FF8C00;
+}
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span{
+    top: 2px;
+    transition: 0.5s;
+    font-size: 13px;
+    color: #FF8C00;
+}
+
+
+
+.inputBox textarea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    padding-top: 12px;
+    border: 1px solid #dadada;
+    outline: none;
+    color: #3D3D3D;
+    background: #fafafa;
+    font-size: 16px;
+    font-weight: 400;
+}
+.inputBox.textArea{
+    height: 120px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 6%;
+}
+
+.inputBox.textArea span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: #BFBFBF;
+    font-weight: 400;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+.submitSec, .submit{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.submit input{
+    height: 42px;
+    width: 120px;
+    margin-left:15px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.submit input.send{
+    background: #FF8C00;
+    color: #fafafa;
+    box-shadow: none;
+    border: 2px solid #FF8C00;
+}
+.submit input.clear{
+    background: transparent;
+    color: #fafafa;
+    box-shadow: none;
+    border: 2px solid #FF8C00;
+}
+.submitSec a{
+    color: #fafafa;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.socialMedia{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.socialMedia li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+.socialMedia li img{
+    width: 2.5rem;
+}
+.copyright p{
+    font-size: 0.75rem;
+    color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding-top: 40px;
+}
+
+@media only screen and (max-width: 767.9px) {
+  .headingOne{
+      font-size: 2.5rem;
+  }
+  .trainer .col-md-3{
+      margin-bottom: 25px;
+  }
+  #myCarousel {
+      margin-top: 0rem;
+  }
+  #myCarousel .carousel-indicators{
+      justify-content: center;
+  }
+  #myCarousel .carousel-indicators{
+      padding-bottom: 0;
+  }
+  #reviewSlide{
+      padding: 1rem 1rem;
+  }
+  #reviewSlide .carousel-item p{
+      padding-top: 12%;
+    font-size: 0.85rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  #reviewSlide .carousel-control-next, #reviewSlide .carousel-control-prev{
+      bottom: 4%;
+  }
+  #reviewSlide .carousel-control-prev {
+      right: 15%;
+  }
+  #reviewSlide .carousel-control-next-icon, #reviewSlide .carousel-control-prev-icon{
+      width: 32px;
+      height: 32px;
+  }
+  .torqGym{
+      padding-left: 15px;
+  }
+  footer p{
+      padding-right: 0;
+  }
+  footer h2{
+      padding-top: 30px;
+  }
+  
+  .submitSec{
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+  .submitSec a{
+      padding-top: 30px;
+  }
+  .copyright p{
+      margin-bottom: 0;
+      padding-top: 15px;
+      text-align: center;
+  }
+  footer {
+      padding: 32px 0px;
+  }
+  .heroBanner{
+      height: auto;
+  }
+  .heroBanner img{
+          height: 25rem;
+  }
+  .heroBanner .container:before{
+      height: 7rem;
+      top: 20%;
+  }
+  .heroBanner .row{
+      flex-direction: column-reverse;
+  }
+  .heroContent h1{
+          font-size: 3.5rem;
+  }
+  .heroContent p{
+      padding-top: 3rem;
+  }
+  .carouselOne {
+      margin-top: 5rem;
+  }
+  .workoutInner .content{
+      height: auto;
+  }
+  .workoutInner .content{
+      padding-right: 2rem;
+  }
+  .workImg{
+      margin-left: 0;
+  }
+  #workCard{
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+  }
+  .workoutInner{
+      height: auto;
+  }
+  .workImg img {
+      width: 18rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .workoutInner .content{
+      padding-bottom: 15rem;
+      padding-top: 2rem;
+      margin-top: 25%;
+
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+	.heroContent h1{
+        font-size: 3.5rem;
+    }
+    .heroBanner{
+        height: auto;
+    }
+    .workoutInner{
+        height: auto;
+    }
+    .workoutInner .content{
+        padding-right: 2rem;
+        height: auto;
+    }
+    .workout h1{
+        width: 50%;
+    }
+	#myCarousel {
+        margin-top: 1rem;
+    }
+    #myCarousel .carousel-indicators{
+        padding-bottom: 0.5rem;
+    }
+    #reviewSlide .carousel-control-next, #reviewSlide .carousel-control-prev{
+        bottom: 10%;
+    }
+    #reviewSlide .carousel-control-prev{
+        right: 8%;
+    }
+    #reviewSlide .carousel-item p{
+        padding-top: 10%;
+    }
+    footer h2{
+        padding-top: 2rem;
+    }
+    .locationSec{
+        display: flex;
+        justify-content: flex-start;
+    }
+    footer p{
+        padding-right: 0;
+    }
+    .gymhrs{
+        margin-top: 0;
+    }
+    .copyright p{
+        text-align: center;
+    }
+    footer{
+        padding: 30px 0px;
+    }
+}
