@@ -14,35 +14,43 @@
 </head>
 
 <body id="body">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container" style="position: relative;">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.png">
+                    <img src="assets/img/logo.png" width="48">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Workout</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Trainers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Gym Tour</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reviews</a>
-                        </li>
-                
-                    </ul>
-                    <button class="btn btnPrimary my-sm-0" type="submit">Contact Us</button>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> -->
+                <div class="" id="">
+                    <input id="burger" type="checkbox" />
+                    <label for="burger" id="menuBar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+        
+                    <div class="nav" id="sideNav">
+                        <div class="menuBase">
+                            <div class="menuList">
+                                <ul>
+                                    <li><a href="#">
+                                        <img src="assets/img/menu-home.svg">Menu
+                                    </a></li>
+                                    <li><a href="#">
+                                        <img src="assets/img/menu-workouts.svg">Workout</a></li>
+                                    <li><a href="#">
+                                        <img src="assets/img/menu-trainers.svg">TRAINERS</a></li>
+                                    <li><a href="#">
+                                        <img src="assets/img/menu-gymtour.svg">Gym Tour</a></li>
+                                    <li><a href="#">
+                                        <img src="assets/img/menu-reviews.svg">Reviews</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
                 </div>
             </div>
         </nav>
@@ -50,122 +58,111 @@
 
     <main role="main" class="main">
         <section class="heroBanner" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-md-6 col-sm-12">
-                        <img src="assets/img/hero-image.png" class="img-fluid">
-                    </div>
+            <div class="container"  style="position: relative;">
+                <div class="row">                                  
                     <div class="col-xl-6 col-md-6 col-sm-12 heroContent">
-                        <h1>BE YOUR<br><span>BEST</span></h1>
+                        <h1>BE YOUR BEST</h1>
                         <h2>VERSION</h2>
                         <p>Not your typical fitness.<br>
                         Workouts scheduled and guided by expert trainers, to unleash your best version.</p>
                     </div>
-                </div>
+                    <div class="col-xl-6 col-md-6 col-sm-12 heroImg">
+                        <img src="assets/img/hero-image.png" class="img-fluid">
+                    </div>
+                </div>                
             </div>
+            <div class="dottBg">
+                    <div class="container">
+                        <div class="dottCircle col-lg-7">
+                            <img src="assets/img/dotted-circle.svg" width="100%" height="auto">
+                        </div>
+                        <div class="dottLine col-lg-8 p-0">
+                            <img src="assets/img/dotted-line.svg" width="100%" height="auto">
+                        </div>
+                    </div>
+               </div>
+            </div>
+           
         </section>
 
         <section class="secOne">
             <div class="container workout">
-                <h1>Workout</h1>
+                <h1 class="headingOne"><span>Our</span>Workout</h1>
 
                 <div class="row carouselOne">
-                    <div class="col-md-12">
-                        <div id="carouselExampleIndicators" class="carousel fade-in" data-ride="carousel" data-interval="false">
-                            <!-- slides -->
+                    <div class="col-md-12 tabBg">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                                aria-controls="pills-home" aria-selected="true">                                
+                                <i class="fas fa-circle"></i> Stretching & Cardio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                                aria-controls="pills-profile" aria-selected="false">
+                                <i class="fas fa-circle"></i> Functional Fitness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                                aria-controls="pills-contact" aria-selected="false">
+                                <i class="fas fa-circle"></i> Strength Training</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <div class="row">
-                                <div class="col-lg-3 col-md-4">
-                            <ol class="carousel-indicators workouts">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">Stretching & Cardio</li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1">Functional Fitness</li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2">Strength Training</li>
-                            </ol>
-                            </div>
-                            <div class="col-lg-9 col-md-8">
-                            <div class="carousel-inner workoutInner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-7 pr-0" id="workCard">
-                                            <div class="content">
-                                                <div class="animate__animated animate__fadeInRight">
-                                                    <p>Aliquam varius scelerisque sem, eget consectetur neque commodo
-                                                        commodo. Donec consectetur dapibus enim, pharetra
-                                                        ipsum
-                                                        non, aliquet turpis. Curabitur idfgb tempus odio, necfbc rt tyrhh enim.
-                                                        Ut sodales, leo etfhe convallis convallis, orci libero gravida velit, at feugiat dui massa a convallis risus.</p>
-                                                    <p>Curabitur id tempus odio, nec enim. Aliquam varius yfhjcs scelerisque
-                                                        sem, eget ffnddn consectetur neque commodo
-                                                        commodo. Donec consectetur odio vulputate, pharetra ipsum non, aliquetb.
-                                                        Donec tristique, consectetur odio vulputate dignissim. Ut sodales, leo etwef convallis convallis. Curabitur id
-                                                        tempus
-                                                        odio, nec dapibus enim. Donec consectetur odio vulputate, pharetra ipsum non, uweryfwei aliquetb. Aliquam varius
-                                                        yfhjcs
-                                                        scelerisque sem, eget ffnddn.</p>
-                                                </div>
-                                            </div>                                            
-                                        </div>
-                                        <div class="col-lg-6 col-md-5 workImg">
-                                            <img src="assets/img/workouts-1.png" class="animate__animated animate__zoomIn animate__slow">
-                                        </div>
-                                    </div>
+                                <div class="col-lg-5 col-md-6">
+                                    <img src="assets/img/workout-1.png" width="100%">
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-7 pr-0" id="workCard">
-                                            <div class="content">
-                                                <div class="animate__animated animate__fadeInRight">
-                                                    <p>Curabitur idfgb tempus odio, necfbc rt tyrhh enim.
-                                                        Ut sodales, leo etfhe convallis convallis, orci libero gravida velit, at feugiat dui massa a convallis
-                                                        risus. </p>
-                                                    <p>Curabitur id tempus odio, nec enim. Aliquam varius yfhjcs scelerisque sem, eget ffnddn consectetur neque
-                                                        commodo
-                                                        commodo. Donec consectetur odio vulputate, pharetra ipsum non, aliquetb.
-                                                        Donec tristique, consectetur odio vulputate dignissim. Ut sodales, leo etwef convallis convallis.
-                                                        Curabitur id
-                                                        tempus
-                                                        odio, nec dapibus enim. Donec consectetur odio vulputate, pharetra ipsum non, uweryfwei aliquetb.
-                                                        Aliquam varius
-                                                        yfhjcs
-                                                        scelerisque sem, eget ffnddn.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-5 workImg">
-                                            <img src="assets/img/workouts-2.png" class="animate__animated animate__zoomIn animate__slow">
-                                        </div>
-                                    </div>
+                                <div class="col-lg-7 col-md-6">
+                                    <p>Aliquam varius scelerisque sem, eget consectetur neque commodo oeerrj commodo. Donec consectetur dapibus enim,
+                                        pharetra ipsum non, aliqudet turpis. Curabitur idfgb tempus odio, necfbc rfuikot ipsum non tyrhh enim. Ut sodales,
+                                        leo etfhe convallis convallis, orci libero gravida velit, at feugdfiat dui massa a convallis risus.</p>
+                                    
+                                    <p>Curabitur id tempus odio, nec enim. Aliquam varius yfhjcs scelerisque sem, eget ffnddn consectetur neque commodo
+                                        commodo. Donec consectetur odio vulputate, pharetra ipsum non, varius yfhjcs scelei uweryfwei aliquetb.</p>
+                                    
+                                    <p>Donec tristique, consectetur odio vulputate dignissim. Ut sodales, leo etwef convallis convallis. Curabitur id tempus
+                                        odio, nec dapibus enim. Don rktec consectetur odio vulputate, pharetra ipsum non, varius yfhjcs scele risqrtue
+                                        uweryfwei aliquetb. Aliquam varius yfhjcs scelerisque sem, eget ffnddn.</p>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-7 pr-0" id="workCard">
-                                            <div class="content">
-                                                <div class="animate__animated animate__fadeInRight">
-                                                    <p>Aliquam varius scelerisque sem, eget consectetur neque commodo
-                                                        commodo. Donec consectetur dapibus enim, pharetra
-                                                        ipsum
-                                                        non, aliquet turpis. Curabitur idfgb tempus odio, necfbc rt tyrhh enim.
-                                                        Ut sodales, leo etfhe convallis convallis, orci libero gravida velit, at feugiat dui massa a convallis risus.
-                                                    </p>
-                                                    <p>Curabitur id tempus odio, nec enim. Aliquam varius yfhjcs scelerisque
-                                                        sem, eget ffnddn consectetur neque commodo
-                                                        commodo. Donec consectetur odio vulputate, pharetra ipsum non, aliquetb.
-                                                        Donec tristique, consectetur odio vulputate dignissim. Ut sodales, leo etwef convallis convallis. Curabitur id
-                                                        tempus
-                                                        odio, nec dapibus enim. Donec consectetur odio vulputate, pharetra ipsum non, uweryfwei aliquetb. Aliquam varius
-                                                        yfhjcs
-                                                        scelerisque sem, eget ffnddn.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-5 workImg">
-                                            <img src="assets/img/workouts-3.png" class="animate__animated animate__zoomIn animate__slow">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
                             </div>
                         </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-6">
+                                    <img src="assets/img/workout-2.png" width="100%">
+                                </div>
+                                <div class="col-lg-7 col-md-6">
+                                    <p>Aliquam varius scelerisque sem, eget consectetur neque commodo oeerrj commodo. Donec consectetur dapibus enim, pharetra ipsum non, aliqudet turpis. Curabitur idfgb tempus odio, necfbc rfuikot ipsum non tyrhh enim. Ut sodales, leo etfhe convallis convallis, orci libero gravida velit, at feugdfiat dui massa a convallis risus.</p>
+                            
+                                    <p>Curabitur id tempus odio, nec enim. Aliquam varius yfhjcs scelerisque sem, eget ffnddn consectetur neque commodo commodo. Donec consectetur odio vulputate, pharetra ipsum non, varius yfhjcs scelei uweryfwei aliquetb.</p>
+                            
+                                    <p>Donec tristique, consectetur odio vulputate dignissim. Ut sodales, leo etwef convallis convallis. Curabitur id tempus odio, nec dapibus enim. Don rktec consectetur odio vulputate, pharetra ipsum non, varius yfhjcs scele risqrtue uweryfwei aliquetb. Aliquam varius yfhjcs scelerisque sem, eget ffnddn.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-6">
+                                    <img src="assets/img/workout-3.png" width="100%">
+                                </div>
+                                <div class="col-lg-7 col-md-6">
+                                    <p>Aliquam varius scelerisque sem, eget consectetur neque commodo oeerrj commodo. Donec consectetur dapibus enim,
+                                        pharetra ipsum non, aliqudet turpis. Curabitur idfgb tempus odio, necfbc rfuikot ipsum non tyrhh enim. Ut sodales,
+                                        leo etfhe convallis convallis, orci libero gravida velit, at feugdfiat dui massa a convallis risus.</p>
+                                    
+                                    <p>Curabitur id tempus odio, nec enim. Aliquam varius yfhjcs scelerisque sem, eget ffnddn consectetur neque commodo
+                                        commodo. Donec consectetur odio vulputate, pharetra ipsum non, varius yfhjcs scelei uweryfwei aliquetb.</p>
+                                    
+                                    <p>Donec tristique, consectetur odio vulputate dignissim. Ut sodales, leo etwef convallis convallis. Curabitur id tempus
+                                        odio, nec dapibus enim. Don rktec consectetur odio vulputate, pharetra ipsum non, varius yfhjcs scele risqrtue
+                                        uweryfwei aliquetb. Aliquam varius yfhjcs scelerisque sem, eget ffnddn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -610,6 +607,21 @@
                     }
                 });
             });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 100) {
+                        $(".navbar").addClass("navBgColor");
+                    }
+
+                    else {
+                        $(".navbar").removeClass("navBgColor");
+                    }
+                })
+            })
     </script>
 </body>
 

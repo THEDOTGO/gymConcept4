@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="932" height="16" viewBox="0 0 932 16">
+  <g id="dotted-line" transform="translate(-276 -910)">
+    <line id="line-dot" x2="900" transform="translate(306 918)" fill="none" stroke="#ff8c00" stroke-linecap="round" stroke-width="4" stroke-dasharray="0 20"/>
+    <circle id="orange-dot" cx="8" cy="8" r="8" transform="translate(276 910)" fill="#ff8c00"/>
+  </g>
+</svg>
