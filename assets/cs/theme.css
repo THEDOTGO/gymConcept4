@@ -325,10 +325,14 @@ nav{
 
 /* Section One */
 .secOne{
-    padding: 7rem 0rem 0rem;
+   
     height: 100%;
     background-image: linear-gradient(to bottom, #000000, #0d0d0d, #171717, #1e1e1e, #262626);
     position: relative;
+}
+.secOne .container{
+    position: relative;
+    padding-top: 9rem;
 }
 .headingOne::before{
     content: '';
@@ -340,7 +344,7 @@ nav{
     background-repeat: no-repeat;
     position: absolute;
     top: 0%;
-    right: 10%;
+    right: 0%;
     z-index: 3;
 }
 
@@ -480,8 +484,12 @@ color: #fafafa;
 /* Section Two */
 .secTwo{
     background-image: linear-gradient(to bottom, #262626, #1e1e1e, #171717, #0d0d0d, #000000);
-     padding: 7rem 0rem 0rem;
      position: relative;
+}
+.secTwo .container{
+    position: relative;
+    padding: 0;
+    padding-top: 9rem;
 }
 
 .headingOne{
@@ -637,10 +645,17 @@ color: #fafafa;
 
 /* Gym Tour */
 .secThree{
-   padding: 9rem 0rem 0rem;
+   
     background-image: linear-gradient(to bottom, #000000, #080808, #0e0e0e, #141414, #181818);
     position: relative;
 }
+
+.secThree .container{
+    padding: 0;
+    position: relative;
+    padding-top: 9rem;
+}
+
 
 #myCarousel .list-inline {
     white-space:nowrap;
@@ -715,9 +730,13 @@ color: #fafafa;
 
 /* Section Four */
 .secFour{
-    padding: 7rem 0px;
     background-image: linear-gradient(to bottom, #181818, #1b1b1b, #1f1f1f, #222222, #262626);
     position: relative;
+}
+.secFour .container{
+    position: relative;
+    padding: 0;
+    padding-top: 7rem;
 }
 #reviewSlide{
     padding: 4rem 1rem;
@@ -833,50 +852,7 @@ footer p{
     position: relative;
     margin-bottom: 6%;
 }
-
-.inputBox input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    padding-top: 15px;
-    border: 1px solid #dadada;
-    outline: none;
-    color: #3D3D3D;
-    background: #fafafa;
-    font-size: 16px;
-    font-weight: 400;
-}
-.inputBox span{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: inline-block;
-    font-size: 16px;
-    color: #BFBFBF;
-    font-weight: 400;
-    transition: 0.3s;
-    font-family: 'Roboto', sans-serif;
-}
-.inputBox input:focus ~ span,
-.inputBox input:valid ~ span{
-    top: 2px;
-    transition: 0.5s;
-    font-size: 13px;
-    color: #FF8C00;
-}
-.inputBox textarea:focus ~ span,
-.inputBox textarea:valid ~ span{
-    top: 2px;
-    transition: 0.5s;
-    font-size: 13px;
-    color: #FF8C00;
-}
-
-
-
-.inputBox textarea{
+.inputBox textarea,.inputBox input{
     position: absolute;
     top: 0;
     left: 0;
@@ -885,28 +861,42 @@ footer p{
     padding-top: 12px;
     border: 1px solid #dadada;
     outline: none;
-    color: #3D3D3D;
-    background: #fafafa;
+    color: #666;
+    background: #BFBFBF;
     font-size: 16px;
     font-weight: 400;
+}
+.inputBox input:focus, .inputBox textarea:focus{
+      background-color: #fff;
+    border: 3px solid #FF8C00;
+    outline: none;
+    box-shadow: none;
+}
+.inputBox span, .inputBox.textArea span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: #666666;
+    font-weight: 400;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span{
+    top: 2px;
+    transition: 0.5s;
+    font-size: 13px;
+    color: #FF8C00;
 }
 .inputBox.textArea{
     height: 120px;
     width: 100%;
     position: relative;
     margin-bottom: 6%;
-}
-
-.inputBox.textArea span{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: inline-block;
-    font-size: 16px;
-    color: #BFBFBF;
-    font-weight: 400;
-    transition: 0.3s;
-    font-family: 'Roboto', sans-serif;
 }
 .submitSec, .submit{
     display: flex;
@@ -946,7 +936,8 @@ footer p{
 }
 .socialMedia li{
     display: inline-block;
-    margin: 5px 15px;
+    margin: 5px 25px;
+    margin-left: 0;
 }
 .socialMedia li img{
     width: 2.5rem;
