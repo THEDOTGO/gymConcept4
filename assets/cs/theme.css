@@ -95,6 +95,9 @@ nav{
   .navbar{
       padding: 5px;
   }
+  .navbar .container{
+      padding-left: 0;
+  }
 
 .navbar input + label {
 	 position: absolute;
