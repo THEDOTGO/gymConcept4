@@ -673,6 +673,7 @@ color: #fafafa;
     margin-left: initial;
     justify-content: flex-end;
     padding-bottom: 2rem;
+    padding-right: 0 !important;
 }
 
 #myCarousel .carousel-indicators > li {
@@ -743,11 +744,11 @@ color: #fafafa;
     padding-top: 7rem;
 }
 #reviewSlide{
-    padding: 4rem 1rem;
+    padding: 4rem 0rem;
 }
 #reviewSlide .carousel-control-next, #reviewSlide .carousel-control-prev{
     top: auto;
-    width: 5rem;
+        width: 2.5rem;
     bottom: 20%;
 }
 #reviewSlide .carousel-item p{
@@ -952,6 +953,9 @@ footer p{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     padding-top: 40px;
+}
+footer .container{
+    padding: 0;
 }
 
 @media only screen and (max-width: 767.9px) {
